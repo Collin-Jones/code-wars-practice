@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
-import static com.sun.tools.jdi.ConnectorImpl.falseString;
-import static com.sun.tools.jdi.ConnectorImpl.trueString;
+
 import static javax.swing.text.html.HTML.Attribute.N;
 
 public class javaPractice {
