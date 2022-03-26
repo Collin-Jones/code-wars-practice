@@ -59,13 +59,21 @@ public class javaPractice {
 //    }
 
 
-    public static double sum(double[] numbers) {
+//    public static double sum(double[] numbers) {
+//
+//        double sum = 0;
+//        for (int i = 0; i < numbers.length; i++) {
+//            sum = sum + numbers[i];
+//        }
+//        return 0.0;
+//    }
 
-        double sum = 0;
-        for (int i = 0; i < numbers.length; i++) {
-            sum = sum + numbers[i];
+    public static int simpleMultiplication(int n) {
+        if (n % 2 == 0){
+            return n * 8;
+        }else{
+            return n * 9;
         }
-        return 0.0;
     }
 }
 
