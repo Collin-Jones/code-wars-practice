@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import static com.sun.tools.jdi.ConnectorImpl.falseString;
+import static com.sun.tools.jdi.ConnectorImpl.trueString;
 import static javax.swing.text.html.HTML.Attribute.N;
 
 public class javaPractice {
@@ -69,10 +71,18 @@ public class javaPractice {
 //    }
 
     public static int simpleMultiplication(int n) {
-        if (n % 2 == 0){
+        if (n % 2 == 0) {
             return n * 8;
-        }else{
+        } else {
             return n * 9;
+        }
+    }
+
+    public static String boolToWord(boolean b) {
+        if(b == true){
+            return "yes";
+        }else {
+            return "no";
         }
     }
 }
