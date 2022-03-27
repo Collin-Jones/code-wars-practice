@@ -78,9 +78,9 @@ public class javaPractice {
     }
 
     public static String boolToWord(boolean b) {
-        if(b == true){
+        if (b == true) {
             return "yes";
-        }else {
+        } else {
             return "no";
         }
     }
@@ -89,12 +89,20 @@ public class javaPractice {
         return "Hello, " + name + " how are you doing today?";
     }
 
-    public static void main(String[] args) {
-        System.out.println(greet("Collin"));
+//    public static void main(String[] args) {
+//        System.out.println(greet("Collin"));
+//    }
+
+    public static int[] countPositivesSumNegatives(int[] input) {
+        if (input == null || input.length == 0) return new int[]{};
+        int count = 0, sum = 0;
+        for (int i : input) {
+            if (i > 0) count++;
+            if (i < 0) sum += i;
+        }
+        return new int[]{count, sum};
     }
 
-    public static int paperWork(int n, int m) {
-        return n * m;
-    }
 }
+
 
