@@ -84,5 +84,17 @@ public class javaPractice {
             return "no";
         }
     }
+
+    public static String greet(String name) {
+        return "Hello, " + name + " how are you doing today?";
+    }
+
+    public static void main(String[] args) {
+        System.out.println(greet("Collin"));
+    }
+
+    public static int paperWork(int n, int m) {
+        return n * m;
+    }
 }
 
