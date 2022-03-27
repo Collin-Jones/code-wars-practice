@@ -103,6 +103,18 @@ public class javaPractice {
         return new int[]{count, sum};
     }
 
+
+    public static int summation(int n) {
+        int sum = 0;
+        for (int i = 0; i <= n; i++) {
+            sum += 1;
+        }
+        return sum;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(summation(0));
+    }
 }
 
 
