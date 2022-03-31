@@ -1,3 +1,4 @@
+import javax.crypto.spec.PSource;
 import java.util.Scanner;
 
 
@@ -112,8 +113,27 @@ public class javaPractice {
         return sum;
     }
 
-    public static void main(String[] args) {
-        System.out.println(summation(8));
+//    public static void main(String[] args) {
+//        System.out.println(summation(8));
+//    }
+
+    public static String areYouPlayingBanjo(String name) {
+        return "Nope!, " + name + " does not playing the Banjo!";
+    }
+
+//    public static void main(String[] args) {
+//        System.out.println(areYouPlayingBanjo("Collin"));
+//    }
+
+    public static String doubleChar(String s){
+        String result = "";
+        int i = 0;
+        while (i < s.length()){
+            char c = s.charAt(i);
+            result = result + c + c;
+            i++;
+        }
+        return doubleChar("abc");
     }
 }
 
