@@ -135,6 +135,16 @@ public class javaPractice {
         }
         return doubleChar("abc");
     }
+
+    public static String remove(String str) {
+        str = str.substring(1, str.length() - 1);
+        return str;
+    }
+
+    public static void main(String[] args) {
+        String str = "Tarkov";
+        System.out.println(str);
+    }
 }
 
 
