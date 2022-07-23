@@ -22,11 +22,8 @@
 // }
 // getGrade(40, 64, 90)
 
-let arr = ['Tarkov', 'Is', 'Amazingly', 'a', 'Trash', 'Game']
+
 function removeEveryOther(arr){
-    for (let i = 0; i < arr.length; i++) {
-        arr.splice(i + 1);
-    }
+    return arr.filter((_, idx) => idx % 2 === 0);
 }
-removeEveryOther(arr)
-console.log(arr)
+
