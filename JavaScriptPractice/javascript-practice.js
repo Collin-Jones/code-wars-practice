@@ -44,11 +44,24 @@
 //     return array;
 // }
 
-function areYouPlayingBanjo(name) {
-    if (name.toLowerCase().charAt(0) == 'r'){
-        name = name + ' plays banjo';
-    }else{
-        name = name + ' does not play banjo';
-    }
-    return name;
+// function areYouPlayingBanjo(name) {
+//     if (name.toLowerCase().charAt(0) == 'r'){
+//         name = name + ' plays banjo';
+//     }else{
+//         name = name + ' does not play banjo';
+//     }
+//     return name;
+// }
+
+// function positiveSum(arr) {
+// let sum = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] > 0) sum += arr[i]
+//     }
+//     return sum;
+// }
+
+function bmi(weight, height) {
+    const x = weight / height ** 2;
+    return x <= 18.5 ? "Underweight" : x <= 25.0 ? "Normal" : x <= 30.0 ? "Overweight" : "Obese";
 }
