@@ -61,7 +61,11 @@
 //     return sum;
 // }
 
-function bmi(weight, height) {
-    const x = weight / height ** 2;
-    return x <= 18.5 ? "Underweight" : x <= 25.0 ? "Normal" : x <= 30.0 ? "Overweight" : "Obese";
-}
+// function bmi(weight, height) {
+//     const x = weight / height ** 2;
+//     return x <= 18.5 ? "Underweight" : x <= 25.0 ? "Normal" : x <= 30.0 ? "Overweight" : "Obese";
+// }
+
+const areaOrPerimeter = function(l , w) {
+    return l === w ? w * l : l * 2 + w * 2
+};
