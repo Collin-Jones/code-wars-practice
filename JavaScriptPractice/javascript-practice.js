@@ -27,13 +27,28 @@
 //     return arr.filter((_, idx) => idx % 2 === 0);
 // }
 
-function sumArray(array)  {
-    if(array && array.length > 1) {
-        const sortedArray = array.sort((a,b) => a - b).slice(1, -1)
-        return sortedArray.reduce((acc, cur) => acc + cur, 0)
+// function sumArray(array)  {
+//     if(array && array.length > 1) {
+//         const sortedArray = array.sort((a,b) => a - b).slice(1, -1)
+//         return sortedArray.reduce((acc, cur) => acc + cur, 0)
+//     }
+//
+//     return 0
+// }
+
+// const reverseSeq = n => {
+//     let array = [];
+//     for (let i = n; i >= 1; i--) {
+//         array.push(i);
+//     }
+//     return array;
+// }
+
+function areYouPlayingBanjo(name) {
+    if (name.toLowerCase().charAt(0) == 'r'){
+        name = name + ' plays banjo';
+    }else{
+        name = name + ' does not play banjo';
     }
-
-    return 0
+    return name;
 }
-
-
