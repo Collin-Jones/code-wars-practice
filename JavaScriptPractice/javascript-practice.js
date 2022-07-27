@@ -130,8 +130,14 @@
 // }
 
 
-function betterThanAverage(classPoints, yourPoints) {
-const average = classPoints.reduce((x , y) => x + y, 0) / classPoints.length;
+// function betterThanAverage(classPoints, yourPoints) {
+// const average = classPoints.reduce((x , y) => x + y, 0) / classPoints.length;
+//
+// return average <= yourPoints
+// }
 
-return average <= yourPoints
+function isTriangle(a,b,c) {
+    let max = Math.max(a,b,c);
+    let sum = a + b + c;
+    return sum - max > max;
 }
