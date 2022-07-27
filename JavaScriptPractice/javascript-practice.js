@@ -119,4 +119,19 @@
 //     return l === w ? w * l : l * 2 + w * 2
 // };
 
+// function sumTwoSmallestNumbers(numbers) {
+//     let result = numbers.sort((a, b) => a - b).slice(0 , 2);
+//
+//     let sum = 0;
+//     for (let i = 0; i < result.length; i++) {
+//         sum += result[i];
+//     }
+//     return sum;
+// }
 
+
+function betterThanAverage(classPoints, yourPoints) {
+const average = classPoints.reduce((x , y) => x + y, 0) / classPoints.length;
+
+return average <= yourPoints
+}
